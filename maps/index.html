@@ -298,6 +298,29 @@
 
     /* ── Preis ── */
     #preise { padding: 96px 0; border-bottom: 1px solid var(--line); background: var(--bg); }
+    .price-block {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      border: 1px solid var(--line);
+      gap: 0;
+    }
+    .price-left {
+      padding: 48px 44px;
+      border-right: 1px solid var(--line);
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .price-left .pc-price { font-size: clamp(64px, 7vw, 88px); margin-bottom: 8px; }
+    .price-left .pc-note { font-size: 13px; font-weight: 300; color: var(--muted2); line-height: 1.5; }
+    .price-right-new {
+      padding: 48px 44px;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    @media (max-width: 640px) {
+      .price-block { grid-template-columns: 1fr; }
+      .price-left { border-right: none; border-bottom: 1px solid var(--line); padding: 36px 28px; }
+      .price-right-new { padding: 36px 28px; }
+    }
+
     .price-single {
       display: grid; grid-template-columns: 1fr 1fr; gap: 2px;
       border: 1px solid var(--line); max-width: 720px;
@@ -539,11 +562,15 @@
         <h2>Einmalig.<br>Kein Abo.</h2>
         <p class="sec-desc">Sie zahlen einmal, das Profil gehört Ihnen für immer. Keine monatlichen Kosten, keine versteckten Gebühren.</p>
       </div>
-      <div class="price-single reveal">
-        <div class="price-col">
-          <div class="pc-eyebrow">Einmalig</div>
-          <div class="pc-price"><sup>€</sup>99</div>
-          <div class="pc-cycle">Setup-Gebühr · einmalig zzgl. MwSt.</div>
+      <div class="price-block reveal">
+        <div class="price-left">
+          <div>
+            <div class="pc-eyebrow">Einmalig</div>
+            <div class="pc-price"><sup>€</sup>99</div>
+            <p class="pc-note">zzgl. 19&nbsp;% MwSt.<br>Kein Abo, keine Folgekosten.</p>
+          </div>
+        </div>
+        <div class="price-right-new">
           <ul class="pc-list">
             <li>Google Business Profil einrichten</li>
             <li>Alle Angaben vollständig befüllen</li>
@@ -552,21 +579,8 @@
             <li>Verifizierung Schritt für Schritt begleiten</li>
             <li>Profil gehört dauerhaft Ihnen</li>
           </ul>
-        </div>
-        <div class="price-col price-right">
-          <div>
-            <div class="pc-eyebrow">Danach</div>
-            <div class="pc-price"><sup>€</sup>0</div>
-            <div class="pc-cycle">Keine monatlichen Kosten</div>
-            <ul class="pc-list">
-              <li>Kein Hosting erforderlich</li>
-              <li>Kein Abo, keine Laufzeit</li>
-              <li>Google Business ist kostenlos</li>
-            </ul>
-          </div>
           <div class="price-cta-wrap">
             <a href="#anfragen" class="btn-main" style="display:block;text-align:center;padding:14px;">Jetzt anfragen</a>
-            <p class="price-fine">Alle Preise zzgl. 19&nbsp;% MwSt.</p>
           </div>
         </div>
       </div>
