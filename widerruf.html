@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F7F4EE">
+
+  <title>Widerrufsbelehrung — Soforthilfe</title>
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23C8291F'/><text y='22' x='7' font-size='18' fill='%23F7F4EE' font-family='sans-serif' font-weight='800'>S</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=dm-sans:300,400,500,600,700&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:     #F7F4EE;
+      --dark:   #0D0C0B;
+      --text:   #0D0C0B;
+      --muted:  #7A7772;
+      --muted2: #B0ADA6;
+      --accent: #C8291F;
+      --line:   rgba(13,12,11,.09);
+      --font:   'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { max-width: 680px; margin: 0 auto; padding: 0 32px; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(247,244,238,.93);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+    .logo { font-size: 16px; font-weight: 700; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
+    .logo b { color: var(--accent); }
+    .nav-back { font-size: 13px; font-weight: 400; color: var(--muted); text-decoration: none; transition: color .2s; }
+    .nav-back:hover { color: var(--text); }
+
+    main { padding: 72px 0 96px; }
+
+    .page-kicker {
+      font-size: 11px; font-weight: 500; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--muted2);
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 700; line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      font-size: 13px; font-weight: 300; color: var(--muted2);
+      margin-bottom: 48px; padding-bottom: 48px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .provider-box {
+      background: rgba(13,12,11,.04);
+      border-left: 3px solid var(--accent);
+      padding: 16px 20px;
+      margin: 16px 0 24px;
+      font-size: 15px; font-weight: 300; line-height: 1.8;
+    }
+
+    .ds-section { margin-bottom: 40px; }
+    .ds-section h2 {
+      font-size: 18px; font-weight: 700;
+      letter-spacing: -0.015em;
+      color: var(--text); margin-bottom: 12px;
+    }
+    .ds-section p {
+      font-size: 15px; font-weight: 300;
+      color: var(--text); line-height: 1.8;
+      margin-bottom: 12px;
+    }
+    .ds-section p:last-child { margin-bottom: 0; }
+    .ds-section a { color: var(--text); }
+    .ds-section a:hover { color: var(--accent); }
+
+    .formular-box {
+      border: 1px solid var(--line);
+      padding: 24px 28px;
+      margin-top: 16px;
+    }
+    .formular-box h3 {
+      font-size: 16px; font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+    }
+    .field-group { margin-bottom: 20px; }
+    .field-label {
+      font-size: 12px; font-weight: 500; letter-spacing: .04em;
+      text-transform: uppercase; color: var(--muted2);
+      margin-bottom: 6px; display: block;
+    }
+    .field-line {
+      border-bottom: 1px solid var(--line);
+      min-height: 24px;
+      margin-top: 4px;
+    }
+    .field-line.tall { min-height: 40px; }
+    .footnote {
+      font-size: 12px; font-weight: 300;
+      color: var(--muted2); margin-top: 20px;
+    }
+
+    hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+
+    footer { background: var(--dark); border-top: 1px solid rgba(236,234,229,.07); padding: 24px 0; }
+    .foot-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 10px;
+      font-size: 12px; font-weight: 300; color: rgba(236,234,229,.25);
+    }
+    footer a { color: rgba(236,234,229,.25); text-decoration: none; transition: color .2s; }
+    footer a:hover { color: rgba(236,234,229,.6); }
+    .foot-links { display: flex; gap: 24px; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container" style="max-width:1080px">
+    <div class="nav-inner">
+      <a class="logo" href="/">soforthilfe<b>.</b></a>
+      <a class="nav-back" href="/">Zurück zur Startseite</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <div class="page-kicker">Rechtliches</div>
+    <h1>Widerrufsbelehrung</h1>
+    <p class="last-updated">Stand: Mai 2026</p>
+
+    <div class="ds-section">
+      <h2>Widerrufsrecht</h2>
+      <p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen.</p>
+      <p>Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag des Vertragsabschlusses. Bei Verträgen, die über Kleinanzeigen.de geschlossen werden, gilt als Vertragsabschluss der Zeitpunkt, zu dem der Anbieter die Auftragsbestätigung per Kleinanzeigen-Nachrichtensystem oder E-Mail absendet.</p>
+      <p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns</p>
+
+      <div class="provider-box">
+        Joe Lorenzo Kehde<br>
+        Galgenberg 17<br>
+        22880 Wedel<br>
+        Deutschland<br>
+        E-Mail: <a href="mailto:info@beoynd.com">info@beoynd.com</a>
+      </div>
+
+      <p>mittels einer eindeutigen Erklärung (z.&nbsp;B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p>
+      <p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
+    </div>
+
+    <hr>
+
+    <div class="ds-section">
+      <h2>Folgen des Widerrufs</h2>
+      <p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.</p>
+      <p>Haben Sie verlangt, dass die Dienstleistungen während der Widerrufsfrist beginnen sollen, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht.</p>
+    </div>
+
+    <hr>
+
+    <div class="ds-section">
+      <h2>Vorzeitiges Erlöschen des Widerrufsrechts</h2>
+      <p>Das Widerrufsrecht erlischt vorzeitig, wenn wir die Dienstleistung vollständig erbracht haben und mit der Ausführung der Dienstleistung erst begonnen haben, nachdem Sie dazu Ihre ausdrückliche Zustimmung gegeben haben und gleichzeitig Ihre Kenntnis davon bestätigt haben, dass Sie Ihr Widerrufsrecht verlieren, sobald wir den Vertrag vollständig erfüllt haben.</p>
+    </div>
+
+    <hr>
+
+    <div class="ds-section">
+      <h2>Muster-Widerrufsformular</h2>
+      <p style="font-size:13px; color:var(--muted2);">(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.)</p>
+
+      <div class="formular-box">
+        <h3>Widerruf</h3>
+        <p style="margin-bottom:20px;">
+          <strong>An:</strong><br>
+          Joe Lorenzo Kehde<br>
+          Galgenberg 17, 22880 Wedel<br>
+          E-Mail: info@beoynd.com
+        </p>
+
+        <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*):</p>
+        <div class="field-line"></div>
+
+        <div class="field-group" style="margin-top:20px;">
+          <span class="field-label">Bestellt am / Vertragsabschluss am (*):</span>
+          <div class="field-line"></div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">Name des/der Verbraucher(s):</span>
+          <div class="field-line"></div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">Anschrift des/der Verbraucher(s):</span>
+          <div class="field-line"></div>
+          <div class="field-line" style="margin-top:8px;"></div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">Unterschrift (nur bei Mitteilung auf Papier):</span>
+          <div class="field-line tall"></div>
+        </div>
+
+        <div class="field-group">
+          <span class="field-label">Datum:</span>
+          <div class="field-line"></div>
+        </div>
+
+        <p class="footnote">(*) Unzutreffendes streichen.</p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="max-width:1080px">
+    <div class="foot-inner">
+      <span>&copy; 2026 Soforthilfe</span>
+      <div class="foot-links">
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
+        <a href="/agb.html">AGB</a>
+        <a href="/widerruf.html">Widerruf</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
